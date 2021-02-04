@@ -1,93 +1,70 @@
-# Github Label 세팅
+# Getting Started with Create React App
 
-## Label 이란?
-- Issue, PR 에 붙여서 분류하기 위한 이름표
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Github 액세스 토큰 발급
-[https://github.com/settings/tokens](https://github.com/settings/tokens)
-- `Generate new token` 클릭
-- 원하는 이름 입력
-- `scopes`에서 repo 선택
+## Available Scripts
 
-![](./images/new-personal-access-token.png)
+In the project directory, you can run:
 
-## Label 정의하기
-- `labels.json` 파일에 JSON Array 형태로 정의
-- `name`, `color`, `description` 을 정의할 수 있음
-```json
-[
-  {
-    "name": "Priority: Critical",
-    "color": "8c001a",
-    "description": "우선순위 긴급"
-  }
-]
-```
+### `yarn start`
 
-## 정의 된 Label 적용하기
-- `액세스 토큰`, `계정명`, `저장소 이름`을 자신의 것으로 변경
-```sh
-npx github-label-sync --access-token [액세스 토큰] --labels labels.json [계정명]/[저장소 이름]
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Label 설정 적용 전
-![](images/before-apply-labels.png)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Label 적용 후
-![](images/after-apply-labels.png)
+### `yarn test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Issue Template
-`Issues` 탭에서 `New issue` 버튼을 눌렀을 때 미리 정의 된 템플릿을 선택할 수 있음
+### `yarn build`
 
-## Issue Template 정의하기
-- 마크다운 형식으로 파일 생성
-- `name`, `about`, `title`, `labels`, `assignees`를 미리 지정할 수 있음
-- labels 의 경우 위에서 정의 한 label name을 지정하면 됨 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 예시
-```markdown
----
-name: Bug Report Template
-about: 버그 리포트 템플릿입니다.
-title: ''
-labels: 'Status: To Do, Priority: Medium, Type: Bugfix/Function, Type: Bugfix/UI'
-assignees: ''
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-# 발생 일시
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# 발생 위치
+### `yarn eject`
 
-# 증상
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-# 재현 방법
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# 스크린샷
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Issue Template 적용
-- 추가 된 파일을 github 원격에 push 한 후 `New issue` 버튼을 누르게 되면 아래와 같이 선택 화면이 나옴
+## Learn More
 
-![](images/issue-template.png)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-# Pull Request Template
-- 마크다운 형식으로 파일 생성
-- `pull_request_template.md`로 파일 이름 지정
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## 예시
-```markdown
-# 반영 브랜치
+### Code Splitting
 
-# 변경 사항
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-# 확인 방법 (스크린샷 포함)
-```
+### Analyzing the Bundle Size
 
-## Pull Request Template 적용
-![](images/pull-request-template.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-# 참고
-- [github-label-sync](https://github.com/Financial-Times/github-label-sync)
-- [Using templates to encourage useful issues and pull requests](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/using-templates-to-encourage-useful-issues-and-pull-requests)
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
