@@ -102,6 +102,16 @@ const Footers = () => {
   );
 };
 
+const CoupangPartners = () => {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {
+        '이 사이트는 쿠팡 파트너스 활동의 일환으로 광고를 표시하고 있으며, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.'
+      }
+    </Typography>
+  );
+};
+
 const Copyright = () => {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -263,6 +273,7 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
       {/* Footer */}
       <Container maxWidth="md" component="footer" className={classes.footer}>
         <Box mt={5}>
+          <CoupangPartners />
           <Copyright />
         </Box>
       </Container>
