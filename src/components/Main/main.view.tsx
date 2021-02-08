@@ -2,38 +2,16 @@ import React, { Fragment } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import StarIcon from '@material-ui/icons/StarBorder';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
 import { REWARD_YES, REWARD_NO, REWARD_MAYBE, REWARD_NOTSURE } from '../../constants/reward.constant';
-
-const footersData = [
-  {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
-  },
-  {
-    title: 'Features',
-    description: ['Cool stuff', 'Random feature', 'Team feature', 'Developer stuff', 'Another one'],
-  },
-  {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-  },
-  {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
-  },
-];
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -80,24 +58,15 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const AdPick = () => {
-  return (
-    <iframe
-      src="https://adpick.co.kr/nativeAD/ad.php?bannerType=type1&limit=1&affid=f7818d&frameId=AdpickAdFrame_202128%40233812&popup=false"
-      width="100%"
-      frameBorder="0"
-      scrolling="no"
-      data-adpick_nativeAD
-      id="AdpickAdFrame_202128@233812"
-    ></iframe>
-  );
+  return <iframe src="./adpick.html" width="100%" frameBorder="0" />;
 };
 
 const CoupangPartners = () => {
-  return <iframe src="./coupang.html" width="100%" frameBorder="0" scrolling="no"></iframe>;
+  return <iframe src="./coupang.html" width="100%" frameBorder="0" scrolling="no" />;
 };
 
 const AdSense = () => {
-  return <iframe src="./adsense.html" width="0" height="0" frameBorder="0" scrolling="no"></iframe>;
+  return <iframe src="./adsense.html" width="0" height="0" frameBorder="0" scrolling="no" />;
 };
 
 const Copyright = () => {
@@ -117,29 +86,6 @@ const Copyright = () => {
         {'.'}
       </Typography>
     </Fragment>
-  );
-};
-
-const Footers = () => {
-  return (
-    <Grid container spacing={4} justify="space-evenly">
-      {footersData.map(footer => (
-        <Grid item xs={6} sm={3} key={footer.title}>
-          <Typography variant="h6" color="textPrimary" gutterBottom>
-            {footer.title}
-          </Typography>
-          <ul>
-            {footer.description.map(item => (
-              <li key={item}>
-                <Link href="#" variant="subtitle1" color="textSecondary">
-                  {item}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Grid>
-      ))}
-    </Grid>
   );
 };
 
@@ -216,7 +162,7 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">
           {/* Enterprise card is full width at sm breakpoint*/}
-          <Grid item key={date} xs={12} sm={12} md={12}>
+          <Grid item key={`title_${date}`} xs={12} sm={12} md={12}>
             <Card>
               <CardHeader
                 title={date}
@@ -229,18 +175,9 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
               <CardContent>
                 <ul>
                   {schedule.length &&
-                    schedule.map(([time, broadcasts]: any[]) => {
+                    schedule.map(([time, broadcasts]: any[], index: number) => {
                       return (
-                        <Fragment>
-                          {/*<div className={classes.cardPricing}>*/}
-                          {/*  <Typography component="h2" variant="h3" color="textPrimary">{time}</Typography>*/}
-                          {/*  /!*<Typography variant="h6" color="textSecondary">*!/*/}
-                          {/*  /!*  /mo*!/*/}
-                          {/*  /!*</Typography>*!/*/}
-                          {/*</div>*/}
-                          {/*<Typography component="li" variant="h5" align="center" key={time}>*/}
-                          {/*  {time}*/}
-                          {/*</Typography>*/}
+                        <div key={index}>
                           <div className={classes.cardPricing}>
                             <Typography component="h2" variant="h4" color="textPrimary">
                               {time}
@@ -262,11 +199,11 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
                                   brideUrl: string;
                                   reward: string;
                                 }) => (
-                                  <div>
-                                    <Typography component="li" variant="body1" align="center" key={id}>
+                                  <div key={id}>
+                                    <Typography component="li" variant="body1" align="center" key={`title_${id}`}>
                                       {`${RewardIcon(reward)} ${title}`}
                                     </Typography>
-                                    <Typography component="li" variant="body2" align="center" key={id}>
+                                    <Typography component="li" variant="body2" align="center" key={`url_${id}`}>
                                       <a href={broadcastUrl} target="_blank">
                                         {broadcastUrl}
                                       </a>
@@ -276,7 +213,7 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
                                 ),
                               )}
                           </div>
-                        </Fragment>
+                        </div>
                       );
                     })}
                 </ul>
@@ -290,7 +227,6 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
           </Grid>
         </Grid>
       </Container>
-      <AdSense />
       {/*Footer*/}
       <Container maxWidth="md" component="footer" className={classes.footer}>
         <CoupangPartners />
