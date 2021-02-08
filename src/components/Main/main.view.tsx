@@ -57,8 +57,40 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const adPickData = [
+  {
+    url: 'https://bitl.kr/HP2Bhd',
+    img: './ads/mario_case.png',
+  },
+  {
+    url: 'https://bitl.kr/jIoCaA',
+    img: './ads/wingbling.png',
+  },
+];
+
+const getRandomIntInclusive = (min: number, max: number) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //최댓값도 포함, 최솟값도 포함
+};
+
 const AdPick = () => {
-  return <iframe src="./adpick.html" width="100%" frameBorder="0" />;
+  const adIndex = getRandomIntInclusive(0, adPickData.length - 1);
+  return (
+    // <iframe
+    //   src="https://adpick.co.kr/nativeAD/ad.php?bannerType=type10&limit=1&affid=f7818d&frameId=AdpickAdFrame_202128%40235457&popup=false"
+    //   width="100%"
+    //   frameBorder="0"
+    //   scrolling="no"
+    //   data-adpick_nativeAD
+    //   id="AdpickAdFrame_202128@235457"
+    // ></iframe>
+    <div style={{ textAlign: 'center' }}>
+      <a href={adPickData[adIndex].url} target="_blank">
+        <img src={adPickData[adIndex].img} style={{ width: '100%', maxWidth: '960px' }} />
+      </a>
+    </div>
+  );
 };
 
 const CoupangPartners = () => {
