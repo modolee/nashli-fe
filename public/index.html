@@ -27,16 +27,35 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <!-- Google AdSense -->
-    <script data-ad-client="ca-pub-7455768714679460" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Coupang Partners -->
-    <script src="https://ads-partners.coupang.com/g.js"></script>
-    <script>
-      new PartnersCoupang.G({"id":438101,"template":"carousel","trackingCode":"AF4473373","width":"350","height":"120"});
-    </script>
     <title>NASHLI</title>
   </head>
   <body>
+    <div id="header">
+      <!-- Google AdSense -->
+      <script data-ad-client="ca-pub-7455768714679460" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
     <div id="root"></div>
+    <div id="footer">
+      <div id="coupang-partners" style="text-align: center;">
+        <p id="coupang-partners-banner">
+          <script src="https://ads-partners.coupang.com/g.js"></script>
+          <script>
+            new PartnersCoupang.G({
+              id: 438101,
+              template: 'carousel',
+              trackingCode: 'AF4473373',
+              width: '350',
+              height: '120',
+            });
+          </script>
+        </p>
+        <p id="coupang-partners-comment">
+          이 사이트는 쿠팡 파트너스 활동의 일환으로 광고를 표시하고 있으며, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.
+        </p>
+      </div>
+      <div id="copyright" style="text-align: center">
+        Copyright © <a href="https://blog.naver.com/lsi0503" target="_blank">JjanVeloper</a> 2021
+      </div>
+    </div>
   </body>
 </html>
