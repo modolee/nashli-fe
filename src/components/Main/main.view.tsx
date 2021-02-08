@@ -79,6 +79,47 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const AdPick = () => {
+  return (
+    <iframe
+      src="https://adpick.co.kr/nativeAD/ad.php?bannerType=type1&limit=1&affid=f7818d&frameId=AdpickAdFrame_202128%40233812&popup=false"
+      width="100%"
+      frameBorder="0"
+      scrolling="no"
+      data-adpick_nativeAD
+      id="AdpickAdFrame_202128@233812"
+    ></iframe>
+  );
+};
+
+const CoupangPartners = () => {
+  return <iframe src="./coupang.html" width="100%" frameBorder="0" scrolling="no"></iframe>;
+};
+
+const AdSense = () => {
+  return <iframe src="./adsense.html" width="0" height="0" frameBorder="0" scrolling="no"></iframe>;
+};
+
+const Copyright = () => {
+  return (
+    <Fragment>
+      <Typography variant="body2" color="textSecondary" align="center">
+        {
+          '이 사이트는 쿠팡 파트너스 활동의 일환으로 광고를 표시하고 있으며, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.'
+        }
+      </Typography>
+      <Typography variant="body2" color="textSecondary" align="center">
+        {'Copyright © '}
+        <Link color="inherit" href="https://blog.naver.com/lsi0503" target="_blank">
+          JjanVeloper
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
+    </Fragment>
+  );
+};
+
 const Footers = () => {
   return (
     <Grid container spacing={4} justify="space-evenly">
@@ -144,6 +185,7 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
   return (
     <React.Fragment>
       <CssBaseline />
+      <AdPick />
       <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
@@ -169,6 +211,7 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
           {REWARD_NO}: 네이버 페이 포인트 지급 안함 언급
         </Typography>
       </Container>
+      <AdSense />
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">
@@ -247,11 +290,13 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
           </Grid>
         </Grid>
       </Container>
-      {/* Footer */}
-      {/*<Container maxWidth="md" component="footer" className={classes.footer}>*/}
-      {/*  <div></div>*/}
-      {/*</Container>*/}
-      {/* End footer */}
+      <AdSense />
+      {/*Footer*/}
+      <Container maxWidth="md" component="footer" className={classes.footer}>
+        <CoupangPartners />
+        <Copyright />
+      </Container>
+      {/*End footer*/}
     </React.Fragment>
   );
 };
