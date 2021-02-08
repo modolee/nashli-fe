@@ -248,9 +248,9 @@ export const MainView = ({ date, count, schedule }: { date: string; count: numbe
         </Grid>
       </Container>
       {/* Footer */}
-      <Container maxWidth="md" component="footer" className={classes.footer}>
-        <div></div>
-      </Container>
+      {/*<Container maxWidth="md" component="footer" className={classes.footer}>*/}
+      {/*  <div></div>*/}
+      {/*</Container>*/}
       {/* End footer */}
     </React.Fragment>
   );
