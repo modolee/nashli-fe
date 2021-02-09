@@ -94,7 +94,7 @@ const AdPick = () => {
 };
 
 const CoupangPartners = () => {
-  return <iframe src="./coupang.html" width="100%" frameBorder="0" scrolling="no" />;
+  return <iframe src="./coupang.html" width="100%" height="200px" frameBorder="0" scrolling="no" />;
 };
 
 const AdSense = () => {
