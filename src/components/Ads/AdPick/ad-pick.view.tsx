@@ -5,7 +5,7 @@ import './index.css';
 
 export default ({ banners }: { banners: { img: string; url: string }[] }) => {
   const properties = {
-    duration: 1000,
+    duration: 5000,
     transitionDuration: 500,
     infinite: true,
     arrows: false,
