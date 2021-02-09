@@ -67,7 +67,7 @@ export default ({ date, count, schedule }: { date: string; count: number; schedu
                               }) => (
                                 <div key={id}>
                                   <Typography component="li" variant="body1" align="center" key={`title_${id}`}>
-                                    {`${RewardIcon(reward)} ${title}`}
+                                    <span style={{ fontSize: '25px' }}>{RewardIcon(reward)}</span> {title}
                                   </Typography>
                                   <Typography component="li" variant="body2" align="center" key={`url_${id}`}>
                                     <a href={broadcastUrl} target="_blank">
