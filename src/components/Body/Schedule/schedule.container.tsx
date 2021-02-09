@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { MainView } from './main.view';
-import { getSchedule } from '../../helpers/api.helper';
-import { getTodayString } from '../../helpers/time.helper';
+import ScheduleView from './schedule.view';
+import { getTodayString } from '../../../helpers/time.helper';
+import { getSchedule } from '../../../helpers/api.helper';
 
-export const MainContainer = () => {
+export default () => {
   const [date, setDate] = useState('');
   const [schedule, setSchedule] = useState({});
   const [count, setCount] = useState(0);
@@ -31,5 +31,5 @@ export const MainContainer = () => {
     fetchSchedule();
   }, []);
 
-  return <MainView date={date} count={count} schedule={schedule} />;
+  return <ScheduleView date={date} count={count} schedule={schedule} />;
 };
