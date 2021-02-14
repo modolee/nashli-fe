@@ -4,6 +4,14 @@ import AdPickView from './ad-pick.view';
 export default () => {
   const banners = [
     {
+      img: './ads/10000recipe.png',
+      url: 'https://bitl.kr/WVLjQP',
+    },
+    {
+      img: './ads/casamom.png',
+      url: 'https://bitl.kr/YnvrFU',
+    },
+    {
       img: './ads/coupang-erato.png',
       url: 'https://bitl.kr/XFIkhO',
     },
