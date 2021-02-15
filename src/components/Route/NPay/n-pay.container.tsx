@@ -24,6 +24,10 @@ const NPayContainer = () => {
 
   const campaignLinks: NPayLinkInterface[] = [
     {
+      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_pampers_2102_3_50',
+      reward: 50,
+    },
+    {
       url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_hanacardr_2102_30',
       reward: 30,
     },
