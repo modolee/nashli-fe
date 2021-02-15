@@ -5,8 +5,8 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import { useStyles } from '../../../styles';
-import { REWARD_MAYBE, REWARD_NO, REWARD_NOTSURE, REWARD_YES } from '../../../constants/reward.constant';
+import { useStyles } from '../../../../styles';
+import { REWARD_MAYBE, REWARD_NO, REWARD_NOTSURE, REWARD_YES } from '../../../../constants/reward.constant';
 
 const RewardIcon = (reward: string) => {
   switch (reward) {
@@ -21,7 +21,7 @@ const RewardIcon = (reward: string) => {
   }
 };
 
-export default ({ date, count, schedule }: { date: string; count: number; schedule: any }) => {
+const ScheduleView = ({ date, count, schedule }: { date: string; count: number; schedule: any }) => {
   const classes = useStyles();
 
   return (
@@ -95,3 +95,5 @@ export default ({ date, count, schedule }: { date: string; count: number; schedu
     </Container>
   );
 };
+
+export default ScheduleView;

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ScheduleView from './schedule.view';
-import { getTodayString } from '../../../helpers/time.helper';
-import { getSchedule } from '../../../helpers/api.helper';
+import { getTodayString } from '../../../../helpers/time.helper';
+import { getSchedule } from '../../../../helpers/api.helper';
 
-export default () => {
+const ScheduleContainer = () => {
   const [date, setDate] = useState('');
   const [schedule, setSchedule] = useState({});
   const [count, setCount] = useState(0);
@@ -33,3 +33,5 @@ export default () => {
 
   return <ScheduleView date={date} count={count} schedule={schedule} />;
 };
+
+export default ScheduleContainer;

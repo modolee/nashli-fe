@@ -7,20 +7,17 @@ export default () => {
   const classes = useStyles();
   return (
     <Fragment>
-      <nav>
-        <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-          Features
+      <nav style={{ textAlign: 'center' }}>
+        <Link variant="button" color="textPrimary" href="/" className={classes.link} underline="always">
+          네이버쇼핑 라이브 스케줄
         </Link>
-        <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-          Enterprise
-        </Link>
-        <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-          Support
+        <Link variant="button" color="textPrimary" href="/npay" className={classes.link} underline="always">
+          네이버페이 적립링크
         </Link>
       </nav>
-      <Button href="#" color="primary" variant="outlined" className={classes.link}>
-        Login
-      </Button>
+      {/*<Button href="#" color="primary" variant="outlined" className={classes.link}>*/}
+      {/*  Login*/}
+      {/*</Button>*/}
     </Fragment>
   );
 };

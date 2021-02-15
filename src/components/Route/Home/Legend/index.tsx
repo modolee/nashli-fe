@@ -1,11 +1,19 @@
 import React, { Fragment } from 'react';
 import Typography from '@material-ui/core/Typography';
-import { REWARD_MAYBE, REWARD_NO, REWARD_NOTSURE, REWARD_YES } from '../../../constants/reward.constant';
+import { REWARD_MAYBE, REWARD_NO, REWARD_NOTSURE, REWARD_YES } from '../../../../constants/reward.constant';
+import Container from '@material-ui/core/Container';
+import { useStyles } from '../../../../styles';
 
 export default () => {
   const rewardIconStyle = { fontSize: '25px' };
+  const classes = useStyles();
+
   return (
-    <Fragment>
+    <Container maxWidth="sm" component="article" className={classes.heroContent}>
+      <Typography component="h3" variant="h4" align="center" color="textPrimary" gutterBottom>
+        네이버쇼핑 라이브 스케줄
+      </Typography>
+
       <Typography variant="h6" align="center" color="textSecondary" component="p">
         <span style={rewardIconStyle}>{REWARD_YES}</span>: 네이버 페이 포인트 지급 확정
       </Typography>
@@ -18,6 +26,6 @@ export default () => {
       <Typography variant="h6" align="center" color="textSecondary" component="p">
         <span style={rewardIconStyle}>{REWARD_NOTSURE}</span>: 알 수 없음
       </Typography>
-    </Fragment>
+    </Container>
   );
 };
