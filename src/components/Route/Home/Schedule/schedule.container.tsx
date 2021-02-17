@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ScheduleView from './schedule.view';
-import { getTodayString } from '../../../../helpers/time.helper';
+import { getTodayString, getTomorrowString } from '../../../../helpers/time.helper';
 import { getSchedule } from '../../../../helpers/api.helper';
 
 const ScheduleContainer = () => {
@@ -9,14 +9,19 @@ const ScheduleContainer = () => {
   const [count, setCount] = useState(0);
 
   const fetchSchedule = async () => {
-    const today = getTodayString();
-    const scheduleResult = await getSchedule(today);
+    let date = getTomorrowString();
+    let scheduleResult = await getSchedule(date);
 
-    if (scheduleResult?.success) {
-      const scheduleData = scheduleResult.data;
+    if (!(scheduleResult?.success && scheduleResult?.data)) {
+      date = getTodayString();
+      scheduleResult = await getSchedule(date);
+    }
 
-      let scheduleArray: any[] = [];
+    const scheduleData = scheduleResult.data;
 
+    let scheduleArray: any[] = [];
+
+    if (scheduleData) {
       Object.values(scheduleData.simpleBroadcasts).map((broadcast: any) => {
         scheduleArray = [...scheduleArray, ...broadcast];
       });
