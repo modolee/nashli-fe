@@ -24,36 +24,12 @@ const NPayContainer = () => {
 
   const campaignLinks: NPayLinkInterface[] = [
     {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_pampers_2102_3_50',
-      reward: 50,
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_hanacardr_2102_30',
+      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_kebhanabanking_2102_2_30',
       reward: 30,
     },
     {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_directdb_2102_30',
+      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_oder_benefit_2021',
       reward: 30,
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_carrotins_2102_30',
-      reward: 30,
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_paymobileplan_2102_30',
-      reward: 30,
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_kebhanabanking_2102_1_30',
-      reward: 30,
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_nain_2102_10',
-      reward: 10,
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_wonderbra_2102_10',
-      reward: 10,
     },
   ];
 
