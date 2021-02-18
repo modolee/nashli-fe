@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bb7c0fac-fda8-4b6f-900e-885099ce2ace/deploy-status)](https://app.netlify.com/sites/nashli/deploys)
+
 # NASHLI FE
 : `NA`ver `SH`opping `LI`ve `F`ront`E`nd
 
