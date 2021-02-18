@@ -6,7 +6,13 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { useStyles } from '../../../../styles';
-import { REWARD_MAYBE, REWARD_NO, REWARD_NOTSURE, REWARD_YES } from '../../../../constants/reward.constant';
+import {
+  REWARD_MAYBE,
+  REWARD_NO,
+  REWARD_NOTSURE,
+  REWARD_YES,
+  REWARD_PROBABLY,
+} from '../../../../constants/reward.constant';
 
 const RewardIcon = (reward: string) => {
   switch (reward) {
@@ -14,6 +20,8 @@ const RewardIcon = (reward: string) => {
       return REWARD_YES;
     case 'RewardNo':
       return REWARD_NO;
+    case 'RewardProbably':
+      return REWARD_PROBABLY;
     case 'RewardMaybe':
       return REWARD_MAYBE;
     case 'RewardNotSure':
