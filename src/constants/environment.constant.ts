@@ -1,4 +1,5 @@
 export const APP_ENV: string | undefined = process.env.REACT_APP_APP_ENV; // 실행 환경
+export const AD_FREE: boolean = process.env.REACT_APP_AD_FREE === 'true'; // 광고 표시 여부
 export const BE_HOST: string | undefined = process.env.REACT_APP_BE_HOST; // 호스트 주소
 export const BE_PORT: string | undefined = process.env.REACT_APP_BE_PORT; // 포트 번호
 
