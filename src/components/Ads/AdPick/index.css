@@ -2,6 +2,10 @@
     text-align: -webkit-center;
 }
 
+.each-slide {
+    cursor: pointer;
+}
+
 @media (max-width: 767px) {
     .each-slide {
         width: 100vw;
