@@ -16,6 +16,10 @@ export default () => {
       url: 'https://nefing.com/3780bdb',
     },
     {
+      img: './ads/gongsin.png', // 공신닷컴 (120)
+      url: 'https://nefing.com/43a690e',
+    },
+    {
       img: './ads/kb_electro.png', // 소액적금 (120)
       url: 'https://nefing.com/433eaf4',
     },
@@ -24,20 +28,12 @@ export default () => {
       url: 'https://nefing.com/6918edd',
     },
     {
-      img: './ads/dewit.png', // 듀잇 밴드 (60)
-      url: 'https://nefing.com/82ac564',
-    },
-    {
       img: './ads/real_water.png', // 미세플라스틱 필터 (60)
       url: 'https://nefing.com/7a33888',
     },
     {
-      img: './ads/hackers_toefl.png',
-      url: 'https://nefing.com/466faa2',
-    },
-    {
-      img: './ads/hackers_police.png',
-      url: 'https://nefing.com/239a4eb',
+      img: './ads/aboydoy.png', // 디지털노마드의 구매대행 무료전자책 (60)
+      url: 'https://nefing.com/209453d',
     },
   ];
 
