@@ -12,6 +12,10 @@ export default () => {
       url: 'https://nefing.com/246684f',
     },
     {
+      img: './ads/galaxy_s21_5g.png', // 갤럭시 S21 (150)
+      url: 'https://nefing.com/3780bdb',
+    },
+    {
       img: './ads/kb_electro.png', // 소액적금 (120)
       url: 'https://nefing.com/433eaf4',
     },
