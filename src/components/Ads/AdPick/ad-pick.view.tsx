@@ -16,14 +16,13 @@ export default ({ banners }: { banners: { img: string; url: string }[] }) => {
     <div className="slide-wrapper">
       <Slide {...properties}>
         {banners.map(banner => (
-          <div className="each-slide">
-            <div
-              style={{ backgroundImage: `url(${banner.img})` }}
-              onClick={() => {
-                window.open(banner.url, '_blank');
-              }}
-            />
-          </div>
+          <img
+            src={banner.img}
+            className="each-slide"
+            onClick={() => {
+              window.open(banner.url, '_blank');
+            }}
+          />
         ))}
       </Slide>
     </div>
