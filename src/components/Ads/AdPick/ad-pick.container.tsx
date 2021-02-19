@@ -4,12 +4,12 @@ import AdPickView from './ad-pick.view';
 export default () => {
   const banners = [
     {
-      img: './ads/db_soil.png', // DB손해보험 (3500)
-      url: 'https://nefing.com/64b5189',
+      img: './ads/seezn.png', // 시즌 (80)
+      url: 'https://nefing.com/471e842',
     },
     {
-      img: './ads/cookie_kingdom.png', // 쿠키런 (2200)
-      url: 'https://nefing.com/246684f',
+      img: './ads/aboydoy.png', // 디지털노마드의 구매대행 무료전자책 (60)
+      url: 'https://nefing.com/209453d',
     },
     {
       img: './ads/galaxy_s21_5g.png', // 갤럭시 S21 (150)
@@ -32,8 +32,12 @@ export default () => {
       url: 'https://nefing.com/7a33888',
     },
     {
-      img: './ads/aboydoy.png', // 디지털노마드의 구매대행 무료전자책 (60)
-      url: 'https://nefing.com/209453d',
+      img: './ads/db_soil.png', // DB손해보험 (3500)
+      url: 'https://nefing.com/64b5189',
+    },
+    {
+      img: './ads/cookie_kingdom.png', // 쿠키런 (2200)
+      url: 'https://nefing.com/246684f',
     },
   ];
 
