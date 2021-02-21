@@ -71,7 +71,8 @@ const NPayView = ({
                     campaignLinks.map((link: any, index: number) => (
                       <div key={index}>
                         <Typography component="li" variant="body1" align="center" key={`reward_${index}`}>
-                          <span style={{ fontSize: '25px' }}>+ {link.reward}</span>
+                          <span style={{ fontSize: '25px' }}>+ {link.reward} </span>
+                          <span style={{ fontSize: '15px', color: 'red' }}>{link.createdAt} 추가</span>
                         </Typography>
 
                         <Typography component="li" variant="body2" align="center" key={`url_${index}`}>
