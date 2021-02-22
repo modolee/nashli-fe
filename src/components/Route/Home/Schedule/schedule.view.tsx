@@ -66,17 +66,32 @@ const ScheduleView = ({ date, count, schedule }: { date: string; count: number; 
                                 broadcastUrl,
                                 brideUrl,
                                 reward,
+                                additionalInfo,
                               }: {
                                 id: number;
                                 title: string;
                                 broadcastUrl: string;
                                 brideUrl: string;
                                 reward: string;
+                                additionalInfo: string[];
                               }) => (
                                 <div key={id}>
                                   <Typography component="li" variant="body1" align="center" key={`title_${id}`}>
                                     <span style={{ fontSize: '25px' }}>{RewardIcon(reward)}</span> {title}
                                   </Typography>
+                                  {additionalInfo.length > 0 &&
+                                    additionalInfo.map((message, index) => (
+                                      <Typography
+                                        color="error"
+                                        component="li"
+                                        variant="body2"
+                                        align="center"
+                                        key={`additional-info_${id}_${index}`}
+                                      >
+                                        {message}
+                                      </Typography>
+                                    ))}
+
                                   <Typography component="li" variant="body2" align="center" key={`url_${id}`}>
                                     <a href={broadcastUrl} target="_blank">
                                       {broadcastUrl}
