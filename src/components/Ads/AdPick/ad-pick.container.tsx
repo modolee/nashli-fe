@@ -8,8 +8,8 @@ export default () => {
       url: 'https://nefing.com/471e842',
     },
     {
-      img: './ads/aboydoy.png', // 디지털노마드의 구매대행 무료전자책 (60)
-      url: 'https://nefing.com/209453d',
+      img: './ads/promi.png', // DB손해보험 (70)
+      url: 'https://nefing.com/26ef2a7',
     },
     {
       img: './ads/galaxy_s21_5g.png', // 갤럭시 S21 (150)
