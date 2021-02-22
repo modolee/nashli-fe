@@ -24,6 +24,16 @@ const NPayContainer = () => {
 
   const campaignLinks: NPayLinkInterface[] = [
     {
+      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_lifeplanet_2102_30',
+      reward: 30,
+      createdAt: '2021-02-22',
+    },
+    {
+      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_welcome_2102_2_30',
+      reward: 30,
+      createdAt: '2021-02-22',
+    },
+    {
       url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_nutrione_2102_30_1',
       reward: 30,
       createdAt: '2021-02-21',
