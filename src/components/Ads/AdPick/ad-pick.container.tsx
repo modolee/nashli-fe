@@ -4,10 +4,6 @@ import AdPickView from './ad-pick.view';
 export default () => {
   const banners = [
     {
-      img: './ads/kakao_navi.png', // 카카오네비 (140)
-      url: 'https://nefing.com/8aa39a8',
-    },
-    {
       img: './ads/seezn.png', // 시즌 (80)
       url: 'https://nefing.com/471e842',
     },
