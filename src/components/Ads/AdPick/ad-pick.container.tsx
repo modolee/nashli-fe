@@ -43,6 +43,26 @@ export default () => {
       img: './ads/cookie_kingdom.png', // 쿠키런 (2200)
       url: 'https://nefing.com/246684f',
     },
+    {
+      img: './ads/icarus.png', // 이카루스 (800)
+      url: 'https://nefing.com/56487b5',
+    },
+    {
+      img: './ads/odyssey.png', // 오디세이 (500)
+      url: 'https://nefing.com/171393f',
+    },
+    {
+      img: './ads/summoners_war.png', // 서머너즈워 (600)
+      url: 'https://nefing.com/36a4229',
+    },
+    {
+      img: './ads/samkuk.png', // 열혈군영전 (560)
+      url: 'https://nefing.com/47d496f',
+    },
+    {
+      img: './ads/dk.png', // DK (700)
+      url: 'https://nefing.com/7bda4c0',
+    },
   ];
 
   return <AdPickView banners={banners} />;
