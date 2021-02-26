@@ -40,6 +40,10 @@ export default () => {
       url: 'https://nefing.com/246684f',
     },
     {
+      img: './ads/arcana_tactics.png', // 아르카나 택틱스 (640)
+      url: 'https://nefing.com/53c9b3f',
+    },
+    {
       img: './ads/icarus.png', // 이카루스 (800)
       url: 'https://nefing.com/56487b5',
     },
