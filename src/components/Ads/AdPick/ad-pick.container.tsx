@@ -24,10 +24,6 @@ export default () => {
       url: 'https://nefing.com/433eaf4',
     },
     {
-      img: './ads/coway.png', // 커피값 정수기 (70)
-      url: 'https://nefing.com/6918edd',
-    },
-    {
       img: './ads/real_water.png', // 미세플라스틱 필터 (60)
       url: 'https://nefing.com/7a33888',
     },
