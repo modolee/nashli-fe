@@ -4,24 +4,12 @@ import AdPickView from './ad-pick.view';
 export default () => {
   const banners = [
     {
-      img: './ads/seezn.png', // 시즌 (80)
-      url: 'https://nefing.com/471e842',
-    },
-    {
-      img: './ads/promi.png', // DB손해보험 (70)
-      url: 'https://nefing.com/26ef2a7',
-    },
-    {
       img: './ads/galaxy_s21_5g.png', // 갤럭시 S21 (150)
       url: 'https://nefing.com/3780bdb',
     },
     {
       img: './ads/gongsin.png', // 공신닷컴 (120)
       url: 'https://nefing.com/43a690e',
-    },
-    {
-      img: './ads/kb_electro.png', // 소액적금 (120)
-      url: 'https://nefing.com/433eaf4',
     },
     {
       img: './ads/real_water.png', // 미세플라스틱 필터 (60)
@@ -46,10 +34,6 @@ export default () => {
     {
       img: './ads/odyssey.png', // 오디세이 (500)
       url: 'https://nefing.com/171393f',
-    },
-    {
-      img: './ads/summoners_war.png', // 서머너즈워 (600)
-      url: 'https://nefing.com/36a4229',
     },
     {
       img: './ads/samkuk.png', // 열혈군영전 (560)
