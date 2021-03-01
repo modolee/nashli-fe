@@ -4,6 +4,10 @@ import AdPickView from './ad-pick.view';
 export default () => {
   const banners = [
     {
+      img: './ads/embrain.png', // 엠브레인 패널파워 (설치 당 800)
+      url: 'https://nefing.com/7abde0f',
+    },
+    {
       img: './ads/galaxy_s21_5g.png', // 갤럭시 S21 (150)
       url: 'https://nefing.com/3780bdb',
     },
