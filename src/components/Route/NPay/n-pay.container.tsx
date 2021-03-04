@@ -24,39 +24,9 @@ const NPayContainer = () => {
 
   const campaignLinks: NPayLinkInterface[] = [
     {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_naver_game_DA_d_001',
-      reward: 100,
-      createdAt: '2021-02-25',
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_jaju_2102_30',
+      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_kbinsure_2103_1_30_0',
       reward: 30,
-      createdAt: '2021-02-24',
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_lifeplanet_2102_30',
-      reward: 30,
-      createdAt: '2021-02-22',
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_welcome_2102_2_30',
-      reward: 30,
-      createdAt: '2021-02-22',
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_nutrione_2102_30_1',
-      reward: 30,
-      createdAt: '2021-02-21',
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_kebhanabanking_2102_2_30',
-      reward: 30,
-      createdAt: '2021-02-19',
-    },
-    {
-      url: 'https://campaign.naver.com/npay/click-point/?eventId=cr_oder_benefit_2021',
-      reward: 30,
-      createdAt: '2021-02-19',
+      createdAt: '2021-03-04',
     },
   ];
 
