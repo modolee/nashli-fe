@@ -8,6 +8,8 @@ const ScheduleContainer = () => {
   const [schedule, setSchedule] = useState({});
   const [count, setCount] = useState(0);
 
+
+
   const fetchSchedule = async () => {
     let date = getTomorrowString();
     let scheduleResult = await getSchedule(date);
@@ -21,7 +23,7 @@ const ScheduleContainer = () => {
 
     let scheduleArray: any[] = [];
 
-    if (scheduleData) {
+    if (Object.keys(scheduleData?.simpleBroadcasts).length > 0) {
       Object.values(scheduleData.simpleBroadcasts).map((broadcast: any) => {
         scheduleArray = [...scheduleArray, ...broadcast];
       });
